@@ -283,3 +283,47 @@ ul a {
 
     padding:2px;
 }
+
+/* Mobile - 480px સુધી */
+@media (max-width: 480px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    .nav-search {
+        width: 100%;
+        order: 3;
+        margin: 5px 0;
+    }
+    .nav-logo { width: 80px; }
+    .shop-section {
+        grid-template-columns: 1fr;
+    }
+    .panel-ops { display: none; }
+    .foot-panel2 {
+        flex-direction: column;
+    }
+}
+
+/* Tablet - 481px થી 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar { flex-wrap: wrap; }
+    .nav-search {
+        width: 100%;
+        order: 3;
+    }
+    .shop-section {
+        grid-template-columns: 1fr 1fr;
+    }
+    .foot-panel2 {
+        flex-direction: column;
+    }
+}
+
+/* iPad Pro / Large Tablet - 769px થી 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .shop-section {
+        grid-template-columns: 1fr 1fr;
+    }
+    .navbar { flex-wrap: wrap; }
+}
