@@ -284,46 +284,200 @@ ul a {
     padding:2px;
 }
 
-/* Mobile - 480px સુધી */
+/* RESPONSIVE DESIGN  */
+
+
 @media (max-width: 480px) {
+
+    /* Navbar */
     .navbar {
+        height: auto;
         flex-wrap: wrap;
+        padding: 8px 10px;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: 40px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 40px;
+    }
+
+    /* Search bar  */
+    .nav-search {
+        width: 100%;
+        order: 4;
+        height: 36px;
+    }
+
+    
+    .nav-address {
+        display: none;
+    }
+
+    .nav-signin {
+        display: none;
+    }
+
+    /* Cart */
+    .nav-cart {
+        font-size: 0.75rem;
+    }
+
+    .nav-cart i {
+        font-size: 24px;
+    }
+
+    /* Panel */
+    .panel {
+        height: auto;
+        padding: 5px;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .panel-ops {
+        width: auto;
+        white-space: nowrap;
+        font-size: 0.75rem;
+    }
+
+    .panel-all {
+        white-space: nowrap;
+        font-size: 0.75rem;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-msg {
+        font-size: 11px;
+        height: auto;
+        padding: 8px;
+        text-align: center;
+    }
+
+    /* Shop boxes- 1  */
+    .shop-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .shop-img {
+        height: 200px;
+    }
+
+    /* Footer */
+    .foot-panel2 {
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .foot-panel4 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .nav-search {
+        width: 100%;
+        order: 4;
+    }
+
+    .nav-address {
+        display: none;
+    }
+
+    .panel {
+        overflow-x: auto;
+        justify-content: flex-start;
         padding: 5px;
     }
-    .nav-search {
-        width: 100%;
-        order: 3;
-        margin: 5px 0;
-    }
-    .nav-logo { width: 80px; }
-    .shop-section {
-        grid-template-columns: 1fr;
-    }
-    .panel-ops { display: none; }
-    .foot-panel2 {
-        flex-direction: column;
-    }
-}
 
-/* Tablet - 481px થી 768px */
-@media (min-width: 481px) and (max-width: 768px) {
-    .navbar { flex-wrap: wrap; }
-    .nav-search {
-        width: 100%;
-        order: 3;
+    .hero-section {
+        height: 280px;
     }
+
+    /* Shop boxes - 2 */
     .shop-section {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 15px;
     }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-img {
+        height: 220px;
+    }
+
     .foot-panel2 {
-        flex-direction: column;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 20px;
     }
 }
 
-/* iPad Pro / Large Tablet - 769px થી 1024px */
+
 @media (min-width: 769px) and (max-width: 1024px) {
-    .shop-section {
-        grid-template-columns: 1fr 1fr;
+
+    .nav-search {
+        width: 400px;
     }
-    .navbar { flex-wrap: wrap; }
+
+    .shop-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .foot-panel2 {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
 }
