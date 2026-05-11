@@ -284,87 +284,54 @@ ul a {
     padding:2px;
 }
 
-/* RESPONSIVE DESIGN  */
 
-
+/* Mobile*/
 @media (max-width: 480px) {
 
-    /* Navbar */
     .navbar {
         height: auto;
         flex-wrap: wrap;
-        padding: 8px 10px;
-        gap: 8px;
+        padding: 6px 10px;
+        gap: 6px;
         justify-content: space-between;
     }
 
-    .nav-logo {
-        width: 80px;
-        height: 40px;
+    .nav-logo, .logo {
+        width: 70px;
+        height: 35px;
     }
 
-    .logo {
-        width: 80px;
-        height: 40px;
-    }
-
-    /* Search bar  */
     .nav-search {
         width: 100%;
-        order: 4;
+        order: 5;
         height: 36px;
+        margin-top: 4px;
     }
 
-    
-    .nav-address {
-        display: none;
-    }
+    .nav-address { display: none; }
+    .nav-first { font-size: 0.6rem; }
+    .nav-second { font-size: 0.75rem; }
+    .nav-cart i { font-size: 24px; }
 
-    .nav-signin {
-        display: none;
-    }
-
-    /* Cart */
-    .nav-cart {
-        font-size: 0.75rem;
-    }
-
-    .nav-cart i {
-        font-size: 24px;
-    }
-
-    /* Panel */
     .panel {
         height: auto;
-        padding: 5px;
-        overflow-x: auto;
+        padding: 6px 10px;
         justify-content: flex-start;
+        gap: 5px;
     }
 
-    .panel-ops {
-        width: auto;
-        white-space: nowrap;
-        font-size: 0.75rem;
-    }
+    .panel-all { display: block; }
+    .panel-ops { display: none; }
 
-    .panel-all {
-        white-space: nowrap;
-        font-size: 0.75rem;
-    }
-
-    /* Hero */
-    .hero-section {
-        height: 200px;
-    }
-
+    .hero-section { height: 180px; }
     .hero-msg {
-        font-size: 11px;
+        font-size: 10px;
         height: auto;
         padding: 8px;
         text-align: center;
+        margin-bottom: 10px;
     }
 
-    /* Shop boxes- 1  */
     .shop-section {
         display: grid;
         grid-template-columns: 1fr;
@@ -372,37 +339,28 @@ ul a {
         padding: 10px;
     }
 
-    .box {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
+    .box { width: 100%; height: auto; padding: 15px; }
+    .shop-img { height: 200px; }
 
-    .shop-img {
-        height: 200px;
-    }
-
-    /* Footer */
     .foot-panel2 {
         height: auto;
         flex-direction: column;
         padding: 15px;
+        gap: 10px;
     }
 
-    .foot-panel4 {
-        height: auto;
-        padding: 10px;
-    }
-
+    .foot-panel4 { height: auto; padding: 10px; }
     .pages {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 8px;
+        padding: 10px;
     }
 }
 
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 600px) {
 
     .navbar {
         height: auto;
@@ -412,26 +370,59 @@ ul a {
         justify-content: space-between;
     }
 
-    .nav-search {
-        width: 100%;
-        order: 4;
-    }
-
-    .nav-address {
-        display: none;
-    }
+    .nav-search { width: 100%; order: 5; }
+    .nav-address { display: none; }
 
     .panel {
+        height: auto;
+        padding: 5px 10px;
+        justify-content: flex-start;
+    }
+
+    .panel-all { display: block; }
+    .panel-ops { display: none; }
+
+    .hero-section { height: 220px; }
+
+    .shop-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .box { width: 100%; height: auto; }
+    .shop-img { height: 180px; }
+
+    .foot-panel2 { height: auto; flex-wrap: wrap; padding: 15px; gap: 15px; }
+    .foot-panel4 { height: auto; padding: 10px; }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .nav-search { width: 100%; order: 5; }
+    .nav-address { display: none; }
+
+    .panel {
+        height: auto;
+        padding: 5px 10px;
         overflow-x: auto;
         justify-content: flex-start;
-        padding: 5px;
     }
 
-    .hero-section {
-        height: 280px;
-    }
+    .panel-all { display: block; }
+    .panel-ops { white-space: nowrap; font-size: 0.75rem; }
 
-    /* Shop boxes - 2 */
+    .hero-section { height: 260px; }
+
     .shop-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -439,29 +430,18 @@ ul a {
         padding: 15px;
     }
 
-    .box {
-        width: 100%;
-        height: auto;
-    }
+    .box { width: 100%; height: auto; }
+    .shop-img { height: 200px; }
 
-    .shop-img {
-        height: 220px;
-    }
-
-    .foot-panel2 {
-        height: auto;
-        flex-wrap: wrap;
-        padding: 15px;
-        gap: 20px;
-    }
+    .foot-panel2 { height: auto; flex-wrap: wrap; padding: 15px; gap: 20px; }
+    .foot-panel4 { height: auto; padding: 10px; }
 }
 
-
+/* iPad  */
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    .nav-search {
-        width: 400px;
-    }
+    .nav-search { width: 380px; }
+    .hero-section { height: 320px; }
 
     .shop-section {
         display: grid;
@@ -470,14 +450,43 @@ ul a {
         padding: 15px;
     }
 
-    .box {
-        width: 100%;
-        height: auto;
+    .box { width: 100%; height: auto; }
+    .shop-img { height: 240px; }
+
+    .foot-panel2 { height: auto; flex-wrap: wrap; padding: 20px; }
+    .foot-panel4 { height: auto; padding: 10px; }
+}
+
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .nav-search { width: 500px; }
+
+    .shop-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        padding: 15px;
     }
 
-    .foot-panel2 {
-        height: auto;
-        flex-wrap: wrap;
+    .box { width: 100%; height: auto; }
+    .shop-img { height: 260px; }
+}
+
+/* Large Desktop */
+@media (min-width: 1281px) {
+
+    .nav-search { width: 650px; }
+
+    .shop-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
         padding: 20px;
     }
+
+    .box { width: 100%; height: auto; }
+    .shop-img { height: 280px; }
 }
+
+
