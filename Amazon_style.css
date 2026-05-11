@@ -320,8 +320,13 @@ ul a {
         gap: 5px;
     }
 
-    .panel-all { display: block; }
-    .panel-ops { display: none; }
+    .panel-all { display: block; white-space: nowrap; }
+    .panel-ops { 
+    display: block;
+    white-space: nowrap; 
+    overflow-x: auto;
+    font-size: 0.75rem;
+   }
 
     .hero-section { height: 180px; }
     .hero-msg {
@@ -379,8 +384,8 @@ ul a {
         justify-content: flex-start;
     }
 
-    .panel-all { display: block; }
-    .panel-ops { display: none; }
+   .panel-all { display: block; white-space: nowrap; }
+   .panel-ops { display: block; white-space: nowrap; font-size: 0.75rem; }
 
     .hero-section { height: 220px; }
 
