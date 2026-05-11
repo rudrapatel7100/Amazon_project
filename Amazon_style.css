@@ -321,14 +321,29 @@ ul a {
     }
 
     .panel-all { display: block; white-space: nowrap; }
-    .panel-ops { 
-    display: block;
-    white-space: nowrap; 
-    overflow-x: auto;
-    font-size: 0.75rem;
-   }
+    .panel-ops {
+    display: none;
+}
 
-    .hero-section { height: 180px; }
+.panel-ops.active {
+    display: block;
+    background-color: #222f3d;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.panel-ops.active p {
+    display: block;
+    padding: 8px 5px;
+    border-bottom: 1px solid #444;
+}
+
+    .hero-section {
+        height: 250px;
+        background-size: cover;
+        background-position: center center;
+    }
+}
     .hero-msg {
         font-size: 10px;
         height: auto;
